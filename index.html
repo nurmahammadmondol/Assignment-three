@@ -11,6 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- DaisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,6 +27,14 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'long-btn-one': '#ABEF5F',
+            'long-btn-two': '#D5F7AF',
+            'Dark-1': '#212121',
+            'Dark-2': '#494949',
+            'Dark-3': '#737373',
+
+
+
           }
         }
       }
@@ -34,17 +47,95 @@
 
     .manrope-font {
       font-family: "Manrope", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
     }
   </style>
 
 </head>
 
 <body class="manrope-font">
+  <!-- Header Section Start -->
+  <header class="w-11/12 h-full md:w-11/12 mx-auto my-8">
 
-  <h3>nur mahammad</h3>
+    <!-- Navber -->
+    <div class="flex justify-between items-center">
+      <!-- webpage Name  -->
+      <div class="">
+        <i class="fa-solid fa-arrow-right bg-long-btn-one p-2 -rotate-45 rounded-full "></i>
+        <a class=" text-[32px] font-bold ml-2">Rinterio</a>
+      </div>
+
+      <!-- nav-center  -->
+      <div class=" hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-[16px] text-Dark-3">
+          <li class="text-Dark-2 font-semibold"><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact Us</a></li>
+
+        </ul>
+      </div>
+
+      <!-- nav-last  -->
+      <div class="flex">
+        <!-- box-1  -->
+        <div class="hidden md:flex mr-4">
+          <a href=""><i class="fa-solid fa-magnifying-glass mr-4 border p-3 rounded-full"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping border p-3 rounded-full bg-white-950"></i></a>
+        </div>
+        <!-- box-2  -->
+        <div class="btn hidden md:flex bg-long-btn-one rounded-3xl">
+          <a class="mr-1 text-[20px] font-bold">Book Consult</a>
+          <i class="fa-solid fa-arrow-right text-white bg-black p-2 -rotate-45 rounded-full"></i>
+        </div>
+        <!-- box-3  -->
+        <div class="flex md:hidden text-2xl">
+          <i class="fa-solid fa-align-justify"></i>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- Banner  -->
+    <div class=" mt-6">
+      <!--banner image part -->
+      <div class=" w-full h-full md:w-[570px] md:h-[350px] mx-auto">
+        <img class="h-full w-full" src="assets/banner.png" alt="">
+      </div>
+      <!-- banner text part -->
+      <div class="text-center md:px-12 mt-3">
+        <h1 class="text-[28px] md:text-[65px] text-Dark-1 font-extrabold leading-none">A barn house of this design has a
+          striking
+          appearance</h1>
+        <p class="text-Dark-2 text-[16px] md:px-[180px] mt-6">The barn house captivates with its blend of rustic charm
+          and
+          modern
+          sophistication,
+          featuring weathered wood,
+          sleek
+          metal accents, and large windows that flood the space with natural light.</p>
+
+        <!-- btn  -->
+        <div class="btn bg-long-btn-two rounded-3xl w-full md:w-[220px] mt-6">
+          <a class="mr-1 text-[20px] font-bold">Book Consult</a>
+          <i class="fa-solid fa-arrow-right bg-long-btn-one p-2 -rotate-45 rounded-full"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- Main Section Start  -->
+  <main></main>
+
+  <!-- Footer Section Start  -->
+  <footer></footer>
+
 </body>
 
 </html>
